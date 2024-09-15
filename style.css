@@ -266,3 +266,44 @@ ul{
     font-size: 1rem;
     text-align: center;
 }
+
+
+
+/* General styles for larger screens (default) */
+
+/* Media query for screen width of 768px or smaller (tablets, small screens) */
+@media only screen and (max-width: 768px) {
+    /* Navbar changes for small screens */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    .nav-search {
+        width: 100%;
+        height: 50px;
+    }
+
+    /* Hero section adjustments */
+    .hero-section {
+        height: 200px;
+        background-size: contain;
+    }
+
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Footer adjustments */
+    .footpanel1, .footerpanel2, .footpanel3, .footpanel4 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
